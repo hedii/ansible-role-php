@@ -1,0 +1,16 @@
+---
+dependencies:
+  - geerlingguy.php-versions
+  - geerlingguy.php
+  - geerlingguy.composer
+galaxy_info:
+  author: hedii
+  description: ""
+  company: ""
+  license: ""
+  min_ansible_version: 2.7
+  platforms:
+    - name: Debian
+      versions:
+        - all
+  galaxy_tags: []

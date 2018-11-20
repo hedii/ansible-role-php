@@ -1,0 +1,56 @@
+---
+# geerlingguy.php-versions
+php_version: '7.2'
+php_versions_install_recommends: false
+
+# geerlingguy.php
+php_default_version_debian: "{{ php_version }}"
+php_enable_webserver: false
+php_packages:
+  - php
+  - php-common
+  - php-cli
+  - php-intl
+  - php-curl
+  - php-cgi
+  - php-fpm
+  - php-mysql
+  - php-mbstring
+  - php-dom
+  - php-zip
+  - php-opcache
+  - php-xml
+  - php-apcu
+  - php-gd
+php_webserver_daemon: nginx
+php_use_managed_ini: true
+php_expose_php: "Off"
+php_memory_limit: 512M
+php_max_execution_time: 1800
+php_max_input_time: 60
+php_max_input_vars: 1000
+php_realpath_cache_size: 32K
+php_upload_max_filesize: 64M
+php_post_max_size: 64M
+php_date_timezone: "Europe/Paris"
+php_enable_php_fpm: true
+php_fpm_listen: "/run/php/php{{ php_version }}-fpm.sock"
+php_fpm_pm_max_children: 70
+php_fpm_pm_start_servers: 27
+php_fpm_pm_min_spare_servers: 20
+php_fpm_pm_max_spare_servers: 35
+php_opcache_zend_extension: "opcache.so"
+php_opcache_enable: "1"
+php_opcache_enable_cli: "0"
+php_opcache_memory_consumption: "512"
+php_opcache_interned_strings_buffer: "32"
+php_opcache_max_accelerated_files: "4096"
+php_opcache_max_wasted_percentage: "5"
+php_opcache_validate_timestamps: "1"
+php_opcache_revalidate_path: "0"
+php_opcache_revalidate_freq: "60"
+php_opcache_max_file_size: "0"
+php_opcache_blacklist_filename: ""
+
+# geerlingguy.composer
+composer_keep_updated: true
