@@ -17,6 +17,11 @@
   include_role:
     name: geerlingguy.php
 
+- name: Ensure all php packages are installed
+  apt:
+    name: "{{ php_packages }}"
+    state: present
+
 - name: include geerlingguy.composer role
   include_role:
     name: geerlingguy.composer
