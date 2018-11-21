@@ -18,6 +18,26 @@
     vars_from: "main.yml"
     name: geerlingguy.php
 
+- name: Ensure php packages are installed
+  apt:
+    name:
+      - php
+      - php-common
+      - php-cli
+      - php-intl
+      - php-curl
+      - php-cgi
+      - php-fpm
+      - php-mysql
+      - php-mbstring
+      - php-dom
+      - php-zip
+      - php-opcache
+      - php-xml
+      - php-apcu
+      - php-gd
+    state: present
+
 - name: include geerlingguy.composer role
   include_role:
     name: geerlingguy.composer
