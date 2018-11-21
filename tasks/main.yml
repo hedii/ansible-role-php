@@ -15,7 +15,6 @@
 
 - name: include geerlingguy.php role
   include_role:
-    vars_from: "main.yml"
     name: geerlingguy.php
 
 - name: Ensure php packages are installed
