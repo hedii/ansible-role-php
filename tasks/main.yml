@@ -9,11 +9,14 @@
     repo: "deb https://packages.sury.org/php/ stretch main"
     state: present
 
-- include_role:
-  name: geerlingguy.php-versions
+- name: include geerlingguy.php-versions role
+  include_role:
+    name: geerlingguy.php-versions
 
-- include_role:
-  name: geerlingguy.php
+- name: include geerlingguy.php role
+  include_role:
+    name: geerlingguy.php
 
-- include_role:
-  name: geerlingguy.composer
+- name: include geerlingguy.composer role
+  include_role:
+    name: geerlingguy.composer
