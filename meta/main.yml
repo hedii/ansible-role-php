@@ -1,8 +1,11 @@
 ---
 dependencies:
-  - geerlingguy.php-versions
-  - geerlingguy.php
-  - geerlingguy.composer
+  - src: geerlingguy.php-versions
+    version: 2.1.5
+  - src: geerlingguy.php
+    version: 3.7.0
+  - src: geerlingguy.composer
+    version: 1.7.3
 galaxy_info:
   author: hedii
   description: ""
