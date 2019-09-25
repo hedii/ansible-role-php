@@ -35,6 +35,7 @@
       - php{{ php_version }}-xml
       - php{{ php_version }}-apcu
       - php{{ php_version }}-gd
+      - php{{ php_version }}-redis
     state: present
 
 - name: include geerlingguy.composer role
