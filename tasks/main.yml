@@ -6,7 +6,7 @@
 
 - name: Add php apt repository
   apt_repository:
-    repo: "deb https://packages.sury.org/php/ {{ php_debian_distribution }} main"
+    repo: "deb https://packages.sury.org/php/ {{ ansible_distribution_release }} main"
     state: present
 
 - name: include geerlingguy.php-versions role

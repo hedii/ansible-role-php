@@ -1,5 +1,4 @@
 ---
-php_debian_distribution: stretch
 # geerlingguy.php-versions
 php_version: '7.2'
 php_versions_install_recommends: false
